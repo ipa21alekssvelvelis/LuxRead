@@ -93,14 +93,14 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
     },
     header: {
-        fontSize: 24,
+        fontSize: 18,
         paddingLeft: 8,
         marginBottom: 10,
     },
     themesContainer: {
         flexDirection: 'row',
         overflow: 'scroll',
-        marginBottom: 20,
+        marginBottom: 10,
     },
     themeSingleContainer: {
         display: 'flex',

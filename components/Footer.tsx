@@ -3,12 +3,10 @@ import { StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Settings from '@/app/settings';
 import Library from '@/app/library';
-
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
 
 const Tab = createMaterialBottomTabNavigator();
 export default function Footer() {
-  
   return (
     <Tab.Navigator shifting={true}>
       <Tab.Screen 

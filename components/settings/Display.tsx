@@ -83,25 +83,25 @@ const Display = ({ onNovelRowsChange }: { onNovelRowsChange: (rows: string) => v
                                 <Pressable onPress={() => {setValue('1'), onNovelRowsChange('1')}} android_ripple={{color: appliedTheme.colors.elevation.level1}}>
                                     <View style={styles.radioButtonContainer}>
                                         <RadioButton.Android value="1" />
-                                        <PaperText style={styles.radioButtonText}>Extra large</PaperText>
+                                        <PaperText style={[styles.radioButtonText, {color: appliedTheme.colors.text}]}>Extra large</PaperText>
                                     </View>
                                 </Pressable>
                                 <Pressable onPress={() => {setValue('2'), onNovelRowsChange('2')}} android_ripple={{color: appliedTheme.colors.elevation.level1}}>
                                     <View style={styles.radioButtonContainer}>
                                         <RadioButton.Android value="2" />
-                                        <PaperText style={styles.radioButtonText}>Large</PaperText>
+                                        <PaperText style={[styles.radioButtonText, {color: appliedTheme.colors.text}]}>Large</PaperText>
                                     </View>
                                 </Pressable>
                                 <Pressable onPress={() => {setValue('3'), onNovelRowsChange('3')}} android_ripple={{color: appliedTheme.colors.elevation.level1}}>
                                     <View style={styles.radioButtonContainer}>
                                         <RadioButton.Android value="3" />
-                                        <PaperText style={styles.radioButtonText}>Medium</PaperText>
+                                        <PaperText style={[styles.radioButtonText, {color: appliedTheme.colors.text}]}>Medium</PaperText>
                                     </View>
                                 </Pressable>
                                 <Pressable onPress={() => {setValue('4'), onNovelRowsChange('4')}} android_ripple={{color: appliedTheme.colors.elevation.level1}}>
                                     <View style={styles.radioButtonContainer}>
                                         <RadioButton.Android value="4" />
-                                        <PaperText style={styles.radioButtonText}>Small</PaperText>
+                                        <PaperText style={[styles.radioButtonText, {color: appliedTheme.colors.text}]}>Small</PaperText>
                                     </View>
                                 </Pressable>
                             </RadioButton.Group>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
     },
     header: {
-        fontSize: 24,
+        fontSize: 18,
         paddingLeft: 8,
         marginBottom: 10,
     },
